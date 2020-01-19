@@ -1,4 +1,129 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* 導覽列 */
+nav {
+    padding: 30px;
+    /* 內距 */
+    display: flex;
+    /* 顯示 靈活 */
+    justify-content: space-between;
+    /* 均勻排列每個子元素。首個起放點，最後放忠點 */
+    /* 參考網站 https://wcc723.github.io/css/2017/07/21/css-flex/ */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    /* 陰影 左右 上下 模糊 紅綠藍透明 */
+    position: sticky;
+    /* 定位 黏住 */
+    top: 0;
+    /* 黏至上方 0 */
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 背景顏色 白色半透明*/
+    z-index: 1;
+    /* 深度/圖層 預設值為 0 */
+}
+
+nav ol li {
+    display: inline-block;
+    padding: 0 20px;
+    /* 內距 上下 左右 */
+}
+
+nav ol li a {
+    color: #000000;
+    text-decoration: none;
+    /* 文字裝飾 無/去底線 */
+}
+
+nav ol li a:hover {
+/* :hover 滑入樣式 */
+    color: #9F0403;    
+}
+
+#logo img {
+    width: 50px;
+    vertical-align: middle;
+    /* 垂直對其 中間 */
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#logo {
+    font-family: 'Noto Serif TC', serif;
+    /* 文字 */
+    font-weight: 900;
+    font-size: 32px;
+}
+
+/* 橫幅 Banner */
+#banner {
+    height: 100vh;
+    /* 100vh 100%螢幕高度 100vw 100%螢幕寬度 */
+    background-image: url(https://images.unsplash.com/photo-1571534682306-7efda41776d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+    /* 背景圖片連結 */
+    background-size: cover;
+    /* 背景圖片尺寸 覆蓋滿版 */
+    margin-top: -100px;
+    /* 上移 */
+    transform: scale(1);
+    /* 變形 縮放(1) 1 = 100% */
+    transition: 3s;
+    /* 轉換 秒數*/
+}
+
+#banner:hover {
+    transform: scale(1.125);
+}
+
+#banner-box {
+    overflow: hidden;
+    /* 溢出 隱藏*/
+    /* 隱藏超出部分 */
+}
+
+/* 內容 */
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.content h1 {
+    color: #9f0403;
+    text-align: center;
+    /* 文字對齊 置中 */
+}
+
+.content p {
+    padding: 20px 0;
+    line-height: 1.5;
+    /* 行距 */
+}
+
+.content ul li {
+    padding: 10px;
+}
+
+.red-box {
+    color: #ffffff;
+    background-color: #9f0403;
+}
+
+.red-box h1 {
+/* 權限關係另外設定*/
+    color: #ffffff;
+}
+
+footer {
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 300px;
+    /* 垂直置中 限定 內容僅一行可使用 行高=高度 */
+    background-color: #9f0403;
 }
