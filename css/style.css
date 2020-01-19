@@ -6,7 +6,7 @@
 
 /* 導覽列 */
 nav {
-    padding: 30px;
+    padding: 25px;
     /* 內距 */
     display: flex;
     /* 顯示 靈活 */
@@ -28,7 +28,7 @@ nav {
 
 nav ol li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 50px;
     /* 內距 上下 左右 */
 }
 
@@ -36,6 +36,8 @@ nav ol li a {
     color: #000000;
     text-decoration: none;
     /* 文字裝飾 無/去底線 */
+    line-height: 50px;
+    font-size: 20px;
 }
 
 nav ol li a:hover {
@@ -45,7 +47,7 @@ nav ol li a:hover {
 
 #logo img {
     width: 50px;
-    vertical-align: middle;
+    vertical-align: -12px;
     /* 垂直對其 中間 */
     margin-right: 10px;
     background-color: #fff;
@@ -58,6 +60,17 @@ nav ol li a:hover {
     /* 文字 */
     font-weight: 900;
     font-size: 32px;
+}
+
+#logo a {
+    color: #252525;
+    text-decoration: none;
+    /* 文字裝飾 無/去底線 */
+    font-weight: 900;
+}
+
+#logo a:hover {
+    color: #9f0403;
 }
 
 /* 橫幅 Banner */
@@ -115,7 +128,7 @@ nav ol li a:hover {
 }
 
 .red-box h1 {
-/* 權限關係另外設定*/
+/* 權限關係另外設定 */
     color: #ffffff;
 }
 
